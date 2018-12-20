@@ -9,7 +9,7 @@ public class RequestController
     {
     }
 
-    public void SendMessage(string Name, string Email, string Phone, string Message)
+    public bool SendMessage(string Name, string Email, string Phone, string Message)
     {
         SqlConnection myConnection = new SqlConnection();
         myConnection.ConnectionString = ConfigurationManager.AppSettings.Get("myAzure");
@@ -34,5 +34,16 @@ public class RequestController
         SqlParameter MessagePara = new SqlParameter("@message", SqlDbType.VarChar, 200);
         MessagePara.Value = Message;
         myCommand.Parameters.Add(MessagePara);
+
+        myConnection.Open();
+
+        bool confirmation = false;
+        int affectedRow  = myCommand.ExecuteNonQuery();
+        if(affectedRow > 0)
+        {
+            confirmation = true;
+        }
+
+        return confirmation;
     }
 }

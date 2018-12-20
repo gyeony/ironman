@@ -1,6 +1,8 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html>
 <html lang="en">
-<head>
+<head runat="server">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -18,6 +20,7 @@
     <link href="css/agency.min.css" rel="stylesheet">
 </head>
 <body id="page-top">
+    <form id="form2" runat="server">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
@@ -38,7 +41,7 @@
                         <a class="nav-link js-scroll-trigger" href="./resume.html">Resume&CV</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="./Resources.aspx">Resources</a>
+                        <a class="nav-link js-scroll-trigger" href="./Resources.aspx">Resource</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -171,11 +174,11 @@
                                 <i class="fas fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="img/portfolio/crf-thumbnail.jpg" alt="Thinkfree Office Online">
+                        <img class="img-fluid" src="img/portfolio/thinkfree-thumbnail.png" alt="Thinkfree Office Online">
                     </a>
                     <div class="portfolio-caption">
-                        <h4><a href="#portfolioModal2" data-toggle="modal">Clinical Data Management System</a></h4>
-                        <p class="text-muted">Automatically creating e-CRF.</p>
+                        <h4><a href="#portfolioModal2" data-toggle="modal">Thinkfree Online</a></h4>
+                        <p class="text-muted">Creating and distributing documents through the online like Google Drive.</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -185,11 +188,11 @@
                                 <i class="fas fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="img/portfolio/thinkfree-thumbnail.png" alt="">
+                        <img class="img-fluid" src="img/portfolio/crf-thumbnail.jpg" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4><a href="#portfolioModal3" data-toggle="modal">Thinkfree Online</a></h4>
-                        <p class="text-muted">Creating and distributing documents through the online like Google Drive.</p>
+                        <h4><a href="#portfolioModal3" data-toggle="modal">Clinical Data Management System</a></h4>
+                        <p class="text-muted">Automatically creating e-CRF.</p>
                     </div>
                 </div>
             </div>
@@ -210,21 +213,21 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.">
+                                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." >
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
+                                    <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address." >
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
+                                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number." >
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message." ></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -279,13 +282,13 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
                                 <h2 class="text-uppercase">FIDO Project</h2>
-                                <p class="item-intro text-muted">FIDO is the World's Largest Ecosystem for Standards-Based, Interoperable Authentication.</p>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                 <img class="img-fluid d-block mx-auto" src="img/portfolio/samsungpay-full.jpg" alt="">
-                                <p>Role: As a serverside programmer, I took a role of designing REST API and controllers.</p>
+                                <p>Role: Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                 <ul class="list-inline">
                                     <li>Start Date: July 2015</li>
                                     <li>End Date: December 2015</li>
-                                    <li>Develop Environment: Java, Play, Restlet, JSON, Eclipse 3.5, Apache Tomcat 6, MySQL, GitHub, Gradle, Go, Jira, Splunk, Bamboo</li>
+                                    <li>Develop Environment: </li>
                                 </ul>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                                     <i class="fas fa-times"></i>
@@ -312,14 +315,14 @@
                         <div class="col-lg-8 mx-auto">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2 class="text-uppercase">eCRF(Case Report Form)</h2>
-                                <p class="item-intro text-muted">Case report form (CRF) is a specialized document in clinical research.</p>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/crf-full.jpg" alt="">
-                                <p>Though paper CRFs are still used largely, use of electronic CRFs (eCRFS) are gaining popularity due to the advantages they offer such as improved data quality, online discrepancy management and faster database lock etc.</p>
+                                <h2 class="text-uppercase">Thinkfree Office Online</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/thinkfree-full.jpg" alt="">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                 <ul class="list-inline">
-                                    <li>Start Date: April 2013</li>
-                                    <li>End Date: April 2015</li>
-                                    <li>Develop Environment: Java 6, Spring ExtJS, CSS, HTML5, JSON, Servlet, JSP, Eclipse 3.5, Apache Tomcat 6, Oracle 10g, 8i, 9i, Git, Maven</li>
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Explore</li>
+                                    <li>Category: Graphic Design</li>
                                 </ul>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                                     <i class="fas fa-times"></i>
@@ -332,7 +335,6 @@
             </div>
         </div>
     </div>
-
     <!-- Modal 3 -->
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -347,14 +349,14 @@
                         <div class="col-lg-8 mx-auto">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2 class="text-uppercase">Thinkfree Office Online</h2>
-                                <p class="item-intro text-muted">Creating and distributing documents through the online like Google Drive.</p>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/thinkfree-full.jpg" alt="">
-                                <p>Role : As a fullstack web developer, I was involved in this project from design phase to deployment.</p>
+                                <h2 class="text-uppercase">eCRF(Case Report Form)</h2>
+                                <p class="item-intro text-muted">Case report form (CRF) is a specialized document in clinical research.</p>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/crf-full.jpg" alt="">
+                                <p>Though paper CRFs are still used largely, use of electronic CRFs (eCRFS) are gaining popularity due to the advantages they offer such as improved data quality, online discrepancy management and faster database lock etc.</p>
                                 <ul class="list-inline">
-                                    <li>Start Date: April 2010</li>
-                                    <li>End Date: October 2012</li>
-                                    <li>Develop Environment: Java, Tomcat, Spring, JSON, HTML4/5, Dojo, Backbone.js, MyBatis, Maven, Eclipse, Hibernate, jQuery, OAUTH</li>
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Finish</li>
+                                    <li>Category: Identity</li>
                                 </ul>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                                     <i class="fas fa-times"></i>
@@ -377,5 +379,8 @@
     <script src="js/contact_me.js"></script>
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
+
+    </form>
 </body>
 </html>
+
