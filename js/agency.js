@@ -47,19 +47,6 @@
         $('.navbar').removeClass('d-none');
     })
 
-    // About Image Click
-    $('.rounded-circle.img-fluid').click(function () {
-        var URL = 'https://www.nait.ca';
-        var urlDirection = this.id;
-        if (urlDirection == 'ImgSamsung')
-            URL = 'https://www.samsungsds.com/us/en/index.html';
-        else if (urlDirection == 'ImgHancom')
-            URL = 'https://www.hancom.com/global/index.jsp';
-        else if (urlDirection == 'ImgKookmin')
-            URL = 'https://english.kookmin.ac.kr/';
-        window.open(URL, '_blank', '', '');
-    });
-
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {

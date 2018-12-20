@@ -153,3 +153,50 @@ a {
 a:hover, a:focus, a:active {
   color: #824027;
 }
+
+.flag-icon {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 1.33333333em;
+  line-height: 1em;
+}
+.flag-icon:before {
+  content: "\00a0";
+}
+.flag-icon.flag-icon-squared {
+  width: 1em;
+}
+
+.flag-icon-kr {
+  background-image: url(../img/flags/4x3/kr.svg);
+}
+.flag-icon-nz {
+  background-image: url(../img/flags/4x3/nz.svg);
+}
+.flag-icon-th {
+  background-image: url(../img/flags/4x3/th.svg);
+}
+.flag-icon-jp {
+  background-image: url(../img/flags/4x3/jp.svg);
+}
+.flag-icon-it {
+  background-image: url(../img/flags/4x3/it.svg);
+}
+.flag-icon-ch {
+  background-image: url(../img/flags/4x3/ch.svg);
+}
+.flag-icon-sg {
+  background-image: url(../img/flags/4x3/sg.svg);
+}
+.flag-icon-gu {
+  background-image: url(../img/flags/4x3/gu.svg);
+}
+.flag-icon-es {
+  background-image: url(../img/flags/4x3/es.svg);
+}
+.flag-icon-us {
+  background-image: url(../img/flags/4x3/us.svg);
+}
